@@ -75,9 +75,6 @@
 		6B61CDC12BE43ADF0095619B = {
 			isa = PBXGroup;
 			children = (
-				6B44E1D12BE598D2001225A3 /* Models */,
-				6B44E1D02BE598CA001225A3 /* Views */,
-				6B44E1CF2BE598A3001225A3 /* View Controllers */,
 				6B61CDCC2BE43ADF0095619B /* Today's Weather */,
 				6B61CDCB2BE43ADF0095619B /* Products */,
 			);
@@ -94,6 +91,9 @@
 		6B61CDCC2BE43ADF0095619B /* Today's Weather */ = {
 			isa = PBXGroup;
 			children = (
+				6B44E1D12BE598D2001225A3 /* Models */,
+				6B44E1D02BE598CA001225A3 /* Views */,
+				6B44E1CF2BE598A3001225A3 /* View Controllers */,
 				6B61CDCD2BE43ADF0095619B /* AppDelegate.swift */,
 				6B61CDCF2BE43ADF0095619B /* SceneDelegate.swift */,
 				6B61CDDB2BE43AE20095619B /* Info.plist */,
