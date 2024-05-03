@@ -36,7 +36,7 @@ class HomeVC: UIViewController {
     func getCityWeatherInfo(){
         LoaderActivityIndicator.isHidden = false
         LoaderActivityIndicator.startAnimating()
-        
+    
         var params = ["id":cityID, "appid": "04a389b0f2725f91e419ed9787421c51"]
      
         AF.request("https://api.openweathermap.org/data/2.5/weather", parameters: params, encoder: URLEncodedFormParameterEncoder.default).responseJSON { response in
