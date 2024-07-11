@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>StringsTable</key>
+	<string>Root</string>
+	<key>PreferenceSpecifiers</key>
+	<array>
+		<dict>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+			<key>Title</key>
+			<string>APP THEME</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSToggleSwitchSpecifier</string>
+			<key>Title</key>
+			<string>Reset Theme</string>
+			<key>Key</key>
+			<string>RESET_THEME</string>
+			<key>DefaultValue</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+			<key>Title</key>
+			<string>CUSTOMIZE THEME</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSTextFieldSpecifier</string>
+			<key>DefaultValue</key>
+			<string></string>
+			<key>Title</key>
+			<string>Background Color Code</string>
+			<key>Key</key>
+			<string>BACKGROUND_COLOR</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSMultiValueSpecifier</string>
+			<key>Titles</key>
+			<array>
+				<string>BLACK</string>
+				<string>BLUE</string>
+				<string>RED</string>
+			</array>
+			<key>Values</key>
+			<array>
+				<string>#292b2c</string>
+				<string>#0275d8</string>
+				<string>#d9534f</string>
+			</array>
+			<key>Title</key>
+			<string>Text Color</string>
+			<key>Key</key>
+			<string>TEXT_COLOR</string>
+			<key>DefaultValue</key>
+			<string>BLACK</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSTitleValueSpecifier</string>
+			<key>DefaultValue</key>
+			<string>1.0</string>
+			<key>Title</key>
+			<string>App Version</string>
+			<key>Key</key>
+			<string>APP_VERSION</string>
+		</dict>
+	</array>
+</dict>
+</plist>
