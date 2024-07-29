@@ -1,0 +1,11 @@
+/* 
+  InfoPlist.strings
+  Today's Weather
+
+  Created by Khalid Gad on 15/07/2024.
+  
+*/
+
+
+// App Name
+"CFBundleName" = "طقسي";

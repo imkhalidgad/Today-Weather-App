@@ -1,0 +1,36 @@
+
+/* Class = "UILabel"; text = "Temp:"; ObjectID = "CKR-br-D1d"; */
+"CKR-br-D1d.text" = "Temp:";
+
+/* Class = "UILabel"; text = "a City"; ObjectID = "KIY-QM-pyn"; */
+"KIY-QM-pyn.text" = "a City";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "Qxq-hI-uc4"; */
+"Qxq-hI-uc4.text" = "-";
+
+/* Class = "UILabel"; text = "Choose"; ObjectID = "SE2-4A-mqF"; */
+"SE2-4A-mqF.text" = "Choose";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "V7r-71-c7j"; */
+"V7r-71-c7j.text" = "-";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Wb0-i3-Y3s"; */
+"Wb0-i3-Y3s.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "pressure:"; ObjectID = "enn-1A-Lbn"; */
+"enn-1A-Lbn.text" = "pressure:";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "l2N-HP-IuF"; */
+"l2N-HP-IuF.text" = "-";
+
+/* Class = "UILabel"; text = "Humidity:"; ObjectID = "l9h-Oh-2yZ"; */
+"l9h-Oh-2yZ.text" = "Humidity:";
+
+/* Class = "UIButton"; configuration.title = "Select"; ObjectID = "lnH-xe-3lG"; */
+"lnH-xe-3lG.configuration.title" = "Select";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "lnH-xe-3lG"; */
+"lnH-xe-3lG.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Cairo"; ObjectID = "sQH-aK-GCt"; */
+"sQH-aK-GCt.text" = "Cairo";

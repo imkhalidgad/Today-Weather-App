@@ -9,7 +9,8 @@
 /* Begin PBXBuildFile section */
 		6B44E1CC2BE535BF001225A3 /* ChangeCityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B44E1CB2BE535BF001225A3 /* ChangeCityVC.swift */; };
 		6B44E1CE2BE537C6001225A3 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B44E1CD2BE537C6001225A3 /* City.swift */; };
-		6B51DE822C3F91EC00611D04 /* ThemeImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B51DE812C3F91EB00611D04 /* ThemeImage.swift */; };
+		6B59681C2C46465C00676882 /* CityName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B59681B2C46465C00676882 /* CityName.swift */; };
+		6B59681D2C46466000676882 /* CityName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B59681B2C46465C00676882 /* CityName.swift */; };
 		6B61CDCE2BE43ADF0095619B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B61CDCD2BE43ADF0095619B /* AppDelegate.swift */; };
 		6B61CDD02BE43ADF0095619B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B61CDCF2BE43ADF0095619B /* SceneDelegate.swift */; };
 		6B61CDD22BE43ADF0095619B /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B61CDD12BE43ADF0095619B /* HomeVC.swift */; };
@@ -18,16 +19,39 @@
 		6B61CDDA2BE43AE20095619B /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 6B61CDD92BE43AE20095619B /* Base */; };
 		6B61CDE32BE43B090095619B /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 6B61CDE22BE43B090095619B /* Alamofire */; };
 		6B61CDE52BE43B090095619B /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 6B61CDE42BE43B090095619B /* AlamofireDynamic */; };
-		6B685E5C2C3E93EF0049CE90 /* ColorsConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B685E582C3E93EE0049CE90 /* ColorsConstant.swift */; };
-		6B685E5D2C3E93EF0049CE90 /* ThemeLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B685E592C3E93EE0049CE90 /* ThemeLabel.swift */; };
-		6B685E5E2C3E93EF0049CE90 /* ThemeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B685E5A2C3E93EE0049CE90 /* ThemeView.swift */; };
-		6B685E602C3E942C0049CE90 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6B685E5F2C3E942B0049CE90 /* Settings.bundle */; };
+		6B6747752C44BC8E004D6A91 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6B6747732C44BC8E004D6A91 /* Localizable.strings */; };
+		6B6747772C44BCCA004D6A91 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6B6747732C44BC8E004D6A91 /* Localizable.strings */; };
+		6B67477A2C44BFB5004D6A91 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6B6747782C44BFB5004D6A91 /* InfoPlist.strings */; };
+		6B67477B2C44BFB5004D6A91 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6B6747782C44BFB5004D6A91 /* InfoPlist.strings */; };
+		6B6C856A2C40D0EC009065A9 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B61CDD12BE43ADF0095619B /* HomeVC.swift */; };
+		6B6C856D2C40D0EC009065A9 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B44E1CD2BE537C6001225A3 /* City.swift */; };
+		6B6C856E2C40D0EC009065A9 /* ChangeCityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B44E1CB2BE535BF001225A3 /* ChangeCityVC.swift */; };
+		6B6C856F2C40D0EC009065A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B61CDCD2BE43ADF0095619B /* AppDelegate.swift */; };
+		6B6C85702C40D0EC009065A9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B61CDCF2BE43ADF0095619B /* SceneDelegate.swift */; };
+		6B6C85722C40D0EC009065A9 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 6B6C85642C40D0EC009065A9 /* Alamofire */; };
+		6B6C85732C40D0EC009065A9 /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 6B6C85662C40D0EC009065A9 /* AlamofireDynamic */; };
+		6B6C85762C40D0EC009065A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B61CDD62BE43AE20095619B /* Assets.xcassets */; };
+		6B6C85772C40D0EC009065A9 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 6B61CDD92BE43AE20095619B /* Base */; };
+		6B6C85782C40D0EC009065A9 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 6B61CDD42BE43ADF0095619B /* Base */; };
+		6B6C857F2C40D19B009065A9 /* Target.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6C857E2C40D19B009065A9 /* Target.swift */; };
+		6B6C85802C40D19B009065A9 /* Target.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6C857E2C40D19B009065A9 /* Target.swift */; };
+		6B6C85822C40D1B4009065A9 /* ThemeImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6C85812C40D1B4009065A9 /* ThemeImage.swift */; };
+		6B6C85832C40D1B4009065A9 /* ThemeImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6C85812C40D1B4009065A9 /* ThemeImage.swift */; };
+		6B6C85852C40D1C1009065A9 /* ThemeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6C85842C40D1C1009065A9 /* ThemeView.swift */; };
+		6B6C85862C40D1C1009065A9 /* ThemeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6C85842C40D1C1009065A9 /* ThemeView.swift */; };
+		6B6C85882C40D1C9009065A9 /* ThemeLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6C85872C40D1C9009065A9 /* ThemeLabel.swift */; };
+		6B6C85892C40D1C9009065A9 /* ThemeLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6C85872C40D1C9009065A9 /* ThemeLabel.swift */; };
+		6B6C858B2C40D1DA009065A9 /* ColorsConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6C858A2C40D1DA009065A9 /* ColorsConstant.swift */; };
+		6B6C858C2C40D1DA009065A9 /* ColorsConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6C858A2C40D1DA009065A9 /* ColorsConstant.swift */; };
+		6B6C858E2C40D3F0009065A9 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6B6C858D2C40D3F0009065A9 /* Settings.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6B05829F2C492D9E00D97A2C /* Today's Weather.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Today's Weather.entitlements"; sourceTree = "<group>"; };
+		6B0582A02C492DAF00D97A2C /* Dev.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Dev.entitlements; sourceTree = "<group>"; };
 		6B44E1CB2BE535BF001225A3 /* ChangeCityVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeCityVC.swift; sourceTree = "<group>"; };
 		6B44E1CD2BE537C6001225A3 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
-		6B51DE812C3F91EB00611D04 /* ThemeImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeImage.swift; sourceTree = "<group>"; };
+		6B59681B2C46465C00676882 /* CityName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityName.swift; sourceTree = "<group>"; };
 		6B61CDCA2BE43ADF0095619B /* Today's Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Today's Weather.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B61CDCD2BE43ADF0095619B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6B61CDCF2BE43ADF0095619B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -36,10 +60,20 @@
 		6B61CDD62BE43AE20095619B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6B61CDD92BE43AE20095619B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6B61CDDB2BE43AE20095619B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6B685E582C3E93EE0049CE90 /* ColorsConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorsConstant.swift; sourceTree = "<group>"; };
-		6B685E592C3E93EE0049CE90 /* ThemeLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeLabel.swift; sourceTree = "<group>"; };
-		6B685E5A2C3E93EE0049CE90 /* ThemeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeView.swift; sourceTree = "<group>"; };
-		6B685E5F2C3E942B0049CE90 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		6B6747712C44BC59004D6A91 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		6B6747722C44BC59004D6A91 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
+		6B6747742C44BC8E004D6A91 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		6B6747762C44BCC9004D6A91 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
+		6B6747792C44BFB5004D6A91 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6B67477C2C44BFBE004D6A91 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6B6C857C2C40D0EC009065A9 /* Dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dev.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B6C857D2C40D0EC009065A9 /* Dev-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Dev-Info.plist"; path = "/Users/khalidgad/Documents/Swift/Apps (UiKit)/Tuwaiq Academy/Today's Weather/Dev-Info.plist"; sourceTree = "<absolute>"; };
+		6B6C857E2C40D19B009065A9 /* Target.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Target.swift; sourceTree = "<group>"; };
+		6B6C85812C40D1B4009065A9 /* ThemeImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeImage.swift; sourceTree = "<group>"; };
+		6B6C85842C40D1C1009065A9 /* ThemeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeView.swift; sourceTree = "<group>"; };
+		6B6C85872C40D1C9009065A9 /* ThemeLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeLabel.swift; sourceTree = "<group>"; };
+		6B6C858A2C40D1DA009065A9 /* ColorsConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsConstant.swift; sourceTree = "<group>"; };
+		6B6C858D2C40D3F0009065A9 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +83,15 @@
 			files = (
 				6B61CDE32BE43B090095619B /* Alamofire in Frameworks */,
 				6B61CDE52BE43B090095619B /* AlamofireDynamic in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B6C85712C40D0EC009065A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B6C85722C40D0EC009065A9 /* Alamofire in Frameworks */,
+				6B6C85732C40D0EC009065A9 /* AlamofireDynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,7 +120,9 @@
 		6B44E1D12BE598D2001225A3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				6B6C857E2C40D19B009065A9 /* Target.swift */,
 				6B44E1CD2BE537C6001225A3 /* City.swift */,
+				6B59681B2C46465C00676882 /* CityName.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -85,9 +130,11 @@
 		6B61CDC12BE43ADF0095619B = {
 			isa = PBXGroup;
 			children = (
-				6B685E5F2C3E942B0049CE90 /* Settings.bundle */,
+				6B0582A02C492DAF00D97A2C /* Dev.entitlements */,
+				6B6C858D2C40D3F0009065A9 /* Settings.bundle */,
 				6B61CDCC2BE43ADF0095619B /* Today's Weather */,
 				6B61CDCB2BE43ADF0095619B /* Products */,
+				6B6C857D2C40D0EC009065A9 /* Dev-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				6B61CDCA2BE43ADF0095619B /* Today's Weather.app */,
+				6B6C857C2C40D0EC009065A9 /* Dev.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -102,6 +150,7 @@
 		6B61CDCC2BE43ADF0095619B /* Today's Weather */ = {
 			isa = PBXGroup;
 			children = (
+				6B05829F2C492D9E00D97A2C /* Today's Weather.entitlements */,
 				6B685E5B2C3E93EE0049CE90 /* Theme Components */,
 				6B44E1D12BE598D2001225A3 /* Models */,
 				6B44E1D02BE598CA001225A3 /* Views */,
@@ -109,6 +158,8 @@
 				6B61CDCD2BE43ADF0095619B /* AppDelegate.swift */,
 				6B61CDCF2BE43ADF0095619B /* SceneDelegate.swift */,
 				6B61CDDB2BE43AE20095619B /* Info.plist */,
+				6B6747732C44BC8E004D6A91 /* Localizable.strings */,
+				6B6747782C44BFB5004D6A91 /* InfoPlist.strings */,
 			);
 			path = "Today's Weather";
 			sourceTree = "<group>";
@@ -116,10 +167,10 @@
 		6B685E5B2C3E93EE0049CE90 /* Theme Components */ = {
 			isa = PBXGroup;
 			children = (
-				6B685E582C3E93EE0049CE90 /* ColorsConstant.swift */,
-				6B685E592C3E93EE0049CE90 /* ThemeLabel.swift */,
-				6B685E5A2C3E93EE0049CE90 /* ThemeView.swift */,
-				6B51DE812C3F91EB00611D04 /* ThemeImage.swift */,
+				6B6C858A2C40D1DA009065A9 /* ColorsConstant.swift */,
+				6B6C85872C40D1C9009065A9 /* ThemeLabel.swift */,
+				6B6C85842C40D1C1009065A9 /* ThemeView.swift */,
+				6B6C85812C40D1B4009065A9 /* ThemeImage.swift */,
 			);
 			path = "Theme Components";
 			sourceTree = "<group>";
@@ -148,6 +199,27 @@
 			productReference = 6B61CDCA2BE43ADF0095619B /* Today's Weather.app */;
 			productType = "com.apple.product-type.application";
 		};
+		6B6C85632C40D0EC009065A9 /* Dev */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B6C85792C40D0EC009065A9 /* Build configuration list for PBXNativeTarget "Dev" */;
+			buildPhases = (
+				6B6C85672C40D0EC009065A9 /* Sources */,
+				6B6C85712C40D0EC009065A9 /* Frameworks */,
+				6B6C85742C40D0EC009065A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Dev;
+			packageProductDependencies = (
+				6B6C85642C40D0EC009065A9 /* Alamofire */,
+				6B6C85662C40D0EC009065A9 /* AlamofireDynamic */,
+			);
+			productName = "Today's Weather";
+			productReference = 6B6C857C2C40D0EC009065A9 /* Dev.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -170,6 +242,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ar,
 			);
 			mainGroup = 6B61CDC12BE43ADF0095619B;
 			packageReferences = (
@@ -180,6 +253,7 @@
 			projectRoot = "";
 			targets = (
 				6B61CDC92BE43ADF0095619B /* Today's Weather */,
+				6B6C85632C40D0EC009065A9 /* Dev */,
 			);
 		};
 /* End PBXProject section */
@@ -189,10 +263,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B685E602C3E942C0049CE90 /* Settings.bundle in Resources */,
 				6B61CDD72BE43AE20095619B /* Assets.xcassets in Resources */,
+				6B6747752C44BC8E004D6A91 /* Localizable.strings in Resources */,
 				6B61CDDA2BE43AE20095619B /* Base in Resources */,
 				6B61CDD52BE43ADF0095619B /* Base in Resources */,
+				6B67477A2C44BFB5004D6A91 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B6C85742C40D0EC009065A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B6747772C44BCCA004D6A91 /* Localizable.strings in Resources */,
+				6B67477B2C44BFB5004D6A91 /* InfoPlist.strings in Resources */,
+				6B6C858E2C40D3F0009065A9 /* Settings.bundle in Resources */,
+				6B6C85762C40D0EC009065A9 /* Assets.xcassets in Resources */,
+				6B6C85772C40D0EC009065A9 /* Base in Resources */,
+				6B6C85782C40D0EC009065A9 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,15 +291,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B685E5E2C3E93EF0049CE90 /* ThemeView.swift in Sources */,
-				6B685E5D2C3E93EF0049CE90 /* ThemeLabel.swift in Sources */,
 				6B61CDD22BE43ADF0095619B /* HomeVC.swift in Sources */,
-				6B51DE822C3F91EC00611D04 /* ThemeImage.swift in Sources */,
-				6B685E5C2C3E93EF0049CE90 /* ColorsConstant.swift in Sources */,
+				6B6C85852C40D1C1009065A9 /* ThemeView.swift in Sources */,
+				6B6C857F2C40D19B009065A9 /* Target.swift in Sources */,
 				6B44E1CE2BE537C6001225A3 /* City.swift in Sources */,
+				6B59681C2C46465C00676882 /* CityName.swift in Sources */,
 				6B44E1CC2BE535BF001225A3 /* ChangeCityVC.swift in Sources */,
+				6B6C858B2C40D1DA009065A9 /* ColorsConstant.swift in Sources */,
+				6B6C85882C40D1C9009065A9 /* ThemeLabel.swift in Sources */,
 				6B61CDCE2BE43ADF0095619B /* AppDelegate.swift in Sources */,
+				6B6C85822C40D1B4009065A9 /* ThemeImage.swift in Sources */,
 				6B61CDD02BE43ADF0095619B /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B6C85672C40D0EC009065A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B6C856A2C40D0EC009065A9 /* HomeVC.swift in Sources */,
+				6B6C85862C40D1C1009065A9 /* ThemeView.swift in Sources */,
+				6B6C85802C40D19B009065A9 /* Target.swift in Sources */,
+				6B6C856D2C40D0EC009065A9 /* City.swift in Sources */,
+				6B59681D2C46466000676882 /* CityName.swift in Sources */,
+				6B6C856E2C40D0EC009065A9 /* ChangeCityVC.swift in Sources */,
+				6B6C858C2C40D1DA009065A9 /* ColorsConstant.swift in Sources */,
+				6B6C85892C40D1C9009065A9 /* ThemeLabel.swift in Sources */,
+				6B6C856F2C40D0EC009065A9 /* AppDelegate.swift in Sources */,
+				6B6C85832C40D1B4009065A9 /* ThemeImage.swift in Sources */,
+				6B6C85702C40D0EC009065A9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,6 +330,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				6B61CDD42BE43ADF0095619B /* Base */,
+				6B6747722C44BC59004D6A91 /* ar */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -230,8 +339,27 @@
 			isa = PBXVariantGroup;
 			children = (
 				6B61CDD92BE43AE20095619B /* Base */,
+				6B6747712C44BC59004D6A91 /* ar */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		6B6747732C44BC8E004D6A91 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B6747742C44BC8E004D6A91 /* en */,
+				6B6747762C44BCC9004D6A91 /* ar */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		6B6747782C44BFB5004D6A91 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B6747792C44BFB5004D6A91 /* en */,
+				6B67477C2C44BFBE004D6A91 /* ar */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -242,6 +370,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -305,6 +434,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -361,9 +491,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Today's Weather/Today's Weather.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 738A487SP4;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Today's Weather/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -375,8 +507,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_SWIFT_FLAGS = "-DUSER";
 				PRODUCT_BUNDLE_IDENTIFIER = "Immortal.Today-s-Weather";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -388,9 +522,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Today's Weather/Today's Weather.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 738A487SP4;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Today's Weather/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -402,8 +538,70 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_SWIFT_FLAGS = "-DUSER";
 				PRODUCT_BUNDLE_IDENTIFIER = "Immortal.Today-s-Weather";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6B6C857A2C40D0EC009065A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Dev.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Dev-Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_SWIFT_FLAGS = "-DDEVELOPER";
+				PRODUCT_BUNDLE_IDENTIFIER = Immortal.Dev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6B6C857B2C40D0EC009065A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Dev.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Dev-Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_SWIFT_FLAGS = "-DDEVELOPER";
+				PRODUCT_BUNDLE_IDENTIFIER = Immortal.Dev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -431,10 +629,27 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		6B6C85792C40D0EC009065A9 /* Build configuration list for PBXNativeTarget "Dev" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B6C857A2C40D0EC009065A9 /* Debug */,
+				6B6C857B2C40D0EC009065A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
 		6B61CDE12BE43B090095619B /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
+		6B6C85652C40D0EC009065A9 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
 			requirement = {
@@ -453,6 +668,16 @@
 		6B61CDE42BE43B090095619B /* AlamofireDynamic */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 6B61CDE12BE43B090095619B /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = AlamofireDynamic;
+		};
+		6B6C85642C40D0EC009065A9 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6B6C85652C40D0EC009065A9 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		6B6C85662C40D0EC009065A9 /* AlamofireDynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6B6C85652C40D0EC009065A9 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = AlamofireDynamic;
 		};
 /* End XCSwiftPackageProductDependency section */

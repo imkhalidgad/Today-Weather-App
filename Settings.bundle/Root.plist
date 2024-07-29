@@ -43,13 +43,15 @@
 			<string>PSMultiValueSpecifier</string>
 			<key>Titles</key>
 			<array>
+				<string>WHITE</string>
 				<string>BLACK</string>
 				<string>BLUE</string>
 				<string>RED</string>
 			</array>
 			<key>Values</key>
 			<array>
-				<string>#292b2c</string>
+				<string>#FFFFFF</string>
+				<string>#000000</string>
 				<string>#0275d8</string>
 				<string>#d9534f</string>
 			</array>

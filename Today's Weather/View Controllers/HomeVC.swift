@@ -10,6 +10,12 @@ import Alamofire
 
 class HomeVC: UIViewController {
     
+    @IBOutlet weak var tempLbl: UILabel!
+    @IBOutlet weak var pressureLbl: UILabel!
+    @IBOutlet weak var humidityLbl: UILabel!
+    
+    @IBOutlet weak var subVIewCity: ThemeView!
+    
     @IBOutlet weak var cityNameLabel: UILabel!
     @IBOutlet weak var tempLabel: UILabel!
     @IBOutlet weak var pressLabel: UILabel!
@@ -30,9 +36,27 @@ class HomeVC: UIViewController {
         searchBTN.layer.cornerRadius =  searchBTN.frame.width/2
         searchBTN.layer.masksToBounds = true
   
-        getCityWeatherInfo()
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]){granted, error in
+            if granted {
+                print("granted")
+                DispatchQueue.main.async{
+                    self.getCityWeatherInfo()
+                }
+            }else {
+                print("denied")
+            }
+        }
+
+        
+        // Localization
+        tempLbl.text = NSLocalizedString("temp", comment: "Temp Label")
+        pressureLbl.text = NSLocalizedString("pressure", comment: "Pressure Label")
+        humidityLbl.text = NSLocalizedString("humidity", comment: "Humidity Label")
+        var cityName = self.cityNameLabel.text
+        self.cityNameLabel.text = NSLocalizedString(cityName!, comment: "city Label")
+               
     }
-    
+
     func getCityWeatherInfo(){
         LoaderActivityIndicator.isHidden = false
         LoaderActivityIndicator.startAnimating()
@@ -55,11 +79,29 @@ class HomeVC: UIViewController {
                 self.tempLabel.text = "\(temp)°C"
                 self.pressLabel.text = "\(press)mb"
                 self.humidityLabel.text = "\(humidity)%"
+                
+                self.pushNotificationWeather(temp: temp)
             }
+                
         }
         
     }
     
+    func pushNotificationWeather(temp: Double){
+        // notification
+        let content = UNMutableNotificationContent()
+        content.title = "\(NSLocalizedString("weatherToDay", comment: "weather today")): \(Date())"
+        content.subtitle = "\(NSLocalizedString("city", comment: "city name")): \(self.cityNameLabel.text!)"
+        content.body = "\(NSLocalizedString("temp", comment: "Temp Label")): \(temp)°C"
+        content.sound = .default
+        content.badge = 1
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: TimeInterval(5), repeats: false)
+        
+        let request = UNNotificationRequest(identifier: "tempID", content: content, trigger: trigger)
+        
+        UNUserNotificationCenter.current().add(request)
+        
+    }
     
     
     // function for change a city
@@ -67,6 +109,11 @@ class HomeVC: UIViewController {
         
         if let city = notification.userInfo?["city"] as? City {
             cityNameLabel.text = city.name
+            
+            // Localization
+            var cityName = self.cityNameLabel.text
+            self.cityNameLabel.text = NSLocalizedString(cityName!, comment: "city Label")
+            
             cityID = city.id
             getCityWeatherInfo()
         }
@@ -102,12 +149,11 @@ class SettingBundleHelper {
         UserDefaults.standard.set(buildVersion, forKey: UserDefaultKeys.APP_VERSION.rawValue)
     }
     class func getViewColor()->UIColor{
-        let color:UIColor = UIColor(hexString: UserDefaults.standard.string(forKey: UserDefaultKeys.BACKGROUND_COLOR.rawValue) ?? "#5bc0de")
+        let color:UIColor = UIColor(hexString: UserDefaults.standard.string(forKey: UserDefaultKeys.BACKGROUND_COLOR.rawValue) ?? "#000000")
         return color;
     }
     class func getTextColor()->UIColor{
-        let color:UIColor = UIColor(hexString: UserDefaults.standard.string(forKey: UserDefaultKeys.TEXT_COLOR.rawValue) ?? "#29262c" )
+        let color:UIColor = UIColor(hexString: UserDefaults.standard.string(forKey: UserDefaultKeys.TEXT_COLOR.rawValue) ?? "#FFFFFF" )
         return color;
     }
 }
-

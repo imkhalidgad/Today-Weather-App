@@ -1,0 +1,45 @@
+/* 
+  Localizable.strings
+  Today's Weather
+
+  Created by Khalid Gad on 15/07/2024.
+  
+*/
+"temp" = "Temp";
+"pressure" = "Pressure";
+"humidity" = "Humidity";
+
+"Cairo" = "Cairo";
+"Giza" = "Giza";
+"Alexandria" = "Alexandria";
+"Aswan" = "Aswan";
+"Assiut" = "Assiut";
+"Beheira" = "Beheira";
+"Beni Suef" = "Beni Suef";
+"Dakahlia" = "Dakahlia";
+"Damietta" = "Damietta";
+"Fayoum" = "Fayoum";
+"Gharbia" = "Gharbia";
+"Ismailia" = "Ismailia";
+"Kafr el-Sheikh" = "Kafr el-Sheikh";
+"Matrouh" = "Matrouh";
+"Minya" = "Minya";
+"Menofia" = "Menofia";
+"North Sinai" = "North Sinai";
+"Port Said" = "Port Said";
+"Qualyubia" = "Qualyubia";
+"Qena" = "Qena";
+"Red Sea" = "Red Sea";
+"Al-Sharqia" = "Al Sharqia";
+"South Sinai" = "South Sinai";
+"Suez" = "Suez";
+"Luxor" = "Luxor";
+"Sohag" = "Sohag";
+
+
+"choose" = "Choose";
+"aCity" = "a City";
+"select" = "Select";
+
+"weatherToDay" = "Weather Today";
+"city" = "City";

@@ -11,9 +11,13 @@ import UIKit
 
 class ChangeCityVC: UIViewController {
 
+    @IBOutlet weak var subVIewChange: ThemeView!
+    @IBOutlet weak var aCityLabel: ThemeLabel!
+    @IBOutlet weak var chooseLabel: ThemeLabel!
     @IBOutlet weak var citiesPickerView: UIPickerView!
-    
     @IBOutlet weak var SelectBTN: UIButton!
+    
+    @IBOutlet weak var arrowIMG: UIImageView!
     
     var citiesArr = [
         City(name: "Cairo", id: "360631"),
@@ -56,7 +60,14 @@ class ChangeCityVC: UIViewController {
         citiesPickerView.delegate = self
         citiesPickerView.dataSource = self
         
-        // Do any additional setup after loading the view.
+        chooseLabel.text = NSLocalizedString("choose", comment: "choose Label")
+        aCityLabel.text = NSLocalizedString("aCity", comment: "a City Label")
+
+        SelectBTN.setTitle(NSLocalizedString("select", comment: "Change city"), for: .normal)
+        
+       // let flippedImage = UIImage(named: "arrowLeft")?.withHorizontallyFlippedOrientation()
+        
+      //  arrowIMG.image = flippedImage
     }
     
     
@@ -82,13 +93,10 @@ extension ChangeCityVC: UIPickerViewDataSource, UIPickerViewDelegate {
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return citiesArr[row].name
+        return NSLocalizedString(citiesArr[row].name, comment: "Temp Label")
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         selectedCity = citiesArr[row]
     }
 }
-
-
-

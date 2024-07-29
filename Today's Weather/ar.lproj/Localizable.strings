@@ -1,0 +1,44 @@
+/* 
+  Localizable.strings
+  Today's Weather
+
+  Created by Khalid Gad on 15/07/2024.
+  
+*/
+"temp" = "درجة الحرارة";
+"pressure" = "الضغط الجوي";
+"humidity" = "نسبة الرطوبة";
+
+"Cairo" = "القاهرة";
+"Giza" = "الجيزة";
+"Alexandria" = "الاسكندرية";
+"Aswan" = "أسوان";
+"Assiut" = "أسيوط";
+"Beheira" = "البحيرة";
+"Beni Suef" = "بني سويف";
+"Dakahlia" = "الدقهلية";
+"Damietta" = "دمياط";
+"Fayoum" = "الفيوم";
+"Gharbia" = "الغربية";
+"Ismailia" = "الاسماعيلية";
+"Kafr el-Sheikh" = "كفر الشيخ";
+"Matrouh" = "مطروح";
+"Minya" = "المنيا";
+"Menofia" = "المنوفية";
+"North Sinai" = "شمال سيناء";
+"Port Said" = "بور سعيد";
+"Qualyubia" = "القليوبية";
+"Qena" = "قنا";
+"Red Sea" = "البحر الأحمر";
+"Al-Sharqia" = "الشرقية";
+"South Sinai" = "جنوب سيناء";
+"Suez" = "السويس";
+"Luxor" = "الأقصر";
+"Sohag" = "سوهاج";
+
+"choose" = "اختر";
+"aCity" = "المدينة";
+"select" = "اختيار";
+
+"weatherToDay" = "الطقس اليوم";
+"city" = "المدينة";
